@@ -1,14 +1,13 @@
+#include <iostream>
 #include "lib.h"
 
-float NumeroMassimo(const float array[],int d) {
-    float max;
-    int i;
-    max = array[0];
-    for (i = 1; i < d; i++) {
+float maggiore(float numero[], int n) {
 
-        if (array[i] > max)
-            max = array[i];
+    float cont = numero[0];
+    for (int i = 0; i < n; i++) {
+        if (numero[i] > cont) {
+            cont = numero[i];
+        }
     }
-    return max;
+    return cont;
 }
-
