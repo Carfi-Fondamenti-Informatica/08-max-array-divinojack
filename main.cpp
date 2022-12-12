@@ -1,16 +1,15 @@
 #include <iostream>
 #include "lib.h"
+
 using namespace std;
 
 int main() {
-    int a;
-    cin >> a;
-    float array[a];
-    for (int i = 0; i < a; i++) {
-        cin >> array[i];
+    int n;
+    cin >> n;
+    float numeri[n];
+    for (int i = 0; i < n; i++) {
+        cin >> numeri[i];
     }
-
-    cout << NumeroMassimo(array, a);
+    cout << maggiore(numeri, n);
     return 0;
-
 }
